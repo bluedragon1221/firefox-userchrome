@@ -1,0 +1,23 @@
+@import "autohide.css";
+
+toolbarbutton[disabled="true"],
+.tab-close-button,
+#alltabs-button,
+#tracking-protection-icon-container,
+#identity-icon-box,
+.titlebar-spacer,
+.titlebar-buttonbox,
+#star-button-box,
+.tab-icon-stack{
+    display: none;
+}
+
+#urlbar-input:first-child {
+    content:""
+}
+
+.tabbrowser-tab[fadein]{ max-width: 100vw !important }
+
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"], [multiselected]) {
+    background-color: transparent !important
+}
